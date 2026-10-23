@@ -32,15 +32,19 @@ if (file_exists("usuarios.json")) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Criar conta</h1>
-    <p><strong><?= htmlspecialchars($mensagem) ?></strong></p> 
-    <form method="post">
-        <p><input type="text" name="usuario" placeholder="Escolher um usuário"></p>
-        <p><input type="password" name="senha" placeholder="Escolha uma senha"></p>
-        <button>Cadastrar</button>
-    </form>
-    <p><a href="login.php">já tenho conta</a></p>
-</body>
-</html>
+    <main class="cartao">
+        <h1>Criar conta</h1>
+        <p class="subtitulo">Esolha um usuario e uma senha</p>
+        <p class="mensagem"><strong><?= htmlspecialchars($mensagem) ?></strong></p>
+        <form method="post">
+            <p><input type="text" name="usuario" placeholder="Escolher um usuário"></p>
+            <p><input type="password" name="senha" placeholder="Escolha uma senha"></p>
+            <button>Cadastrar</button>
+        </form>
+        <p class="links"><a href="login.php">já tenho conta</a></p>
+        </body>
+        </html>
+    </main>
